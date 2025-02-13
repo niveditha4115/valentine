@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 50px; /* Moves text lower */
+}
+
+.gif {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+#yes-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+#no-btn {
+  background: #ffcccb;
+  color: #333;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.heart {
+  position: absolute;
+  color: #ff4d4d;
+  font-size: 2rem;
+  animation: float 3s infinite;
+}
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:active {
+  transform: translateY(-10px);
+}
